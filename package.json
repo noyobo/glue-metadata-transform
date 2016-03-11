@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/noyobo/glue-metadata-transform/issues"
   },
-  "homepage": "https://github.com/noyobo/glue-metadata-transform#readme"
+  "homepage": "https://github.com/noyobo/glue-metadata-transform#readme",
+  "dependencies": {
+    "swig": "^1.4.2"
+  }
 }

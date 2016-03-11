@@ -1,0 +1,33 @@
+/* hash: {{ meta.hash }} */
+
+// backgroud image set
+{%- for icon in frames %}
+.icon-abc-{{ icon.filename }}{%if not loop.last %},{% endif %}
+{%- if 'ww-online' === icon.filename %}
+.srp-page .ww-small .ww-online,
+{%- endif %}
+{%- if 'ww-offline' === icon.filename %}
+.srp-page .ww-small .ww-offline,
+{%- endif %}
+{%- endfor %}{
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  font-size: 0;
+  background-image:url('{{ meta.sprite_path }}');
+  background-repeat:no-repeat;
+}
+// backgroud postion
+{%- for icon in frames %}
+{% if 'ww-online' === icon.filename %}
+  .srp-page .ww-small .ww-online,
+{% endif %}
+{% if 'ww-offline' === icon.filename %}
+  .srp-page .ww-small .ww-offline,
+{% endif %}
+.icon-abc-{{ icon.filename }}{
+    background-position:{{ icon.frame.x }}px {{ icon.frame.y }}px;
+    width:{{ icon.frame.w }}px;
+    height:{{ icon.frame.h }}px;
+}
+{%- endfor %}
