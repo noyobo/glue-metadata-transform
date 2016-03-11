@@ -1,0 +1,24 @@
+{
+  "name": "glue-metadata-transform",
+  "version": "0.1.0",
+  "description": "Glue Sprite Metadata (JSON) to style sheet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noyobo/glue-metadata-transform.git"
+  },
+  "keywords": [
+    "glue",
+    "sprite",
+    "json2css"
+  ],
+  "author": "noyobo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noyobo/glue-metadata-transform/issues"
+  },
+  "homepage": "https://github.com/noyobo/glue-metadata-transform#readme"
+}
